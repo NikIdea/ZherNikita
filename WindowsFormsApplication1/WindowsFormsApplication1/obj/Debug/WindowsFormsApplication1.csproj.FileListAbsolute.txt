@@ -1,1 +1,2 @@
 c:\users\никита\documents\visual studio 2012\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Никита\Documents\Visual Studio 2015\Projects\ZherNikita\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
