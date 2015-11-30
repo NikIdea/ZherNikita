@@ -2839,7 +2839,7 @@ input[type="button"].btn-block {
   content: "\e110";
 }
 
-.glyphicon-comment:before {
+.glyphicon-review:before {
   content: "\e111";
 }
 

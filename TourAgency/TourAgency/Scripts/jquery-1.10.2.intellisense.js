@@ -1098,7 +1098,7 @@ intellisense.annotate(jQuery.fn, {
     /// </signature>
   },
   'contents': function() {
-    /// <summary>Get the children of each element in the set of matched elements, including text and comment nodes.</summary>
+    /// <summary>Get the children of each element in the set of matched elements, including text and review nodes.</summary>
     /// <returns type="jQuery" />
   },
   'context': function() {
