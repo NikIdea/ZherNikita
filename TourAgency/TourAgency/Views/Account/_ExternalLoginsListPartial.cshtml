@@ -1,28 +1,25 @@
-﻿@model TourAgency.Models.ExternalLoginListViewModel
-@using Microsoft.Owin.Security
+﻿@model ICollection<AuthenticationClientData>
 
-<h4>Используйте для входа другую службу.</h4>
-<hr />
-@{
-    var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
-    if (loginProviders.Count() == 0) {
-        <div>
-            <p>
-                Внешние службы проверки подлинности не настроены. В <a href="http://go.microsoft.com/fwlink/?LinkId=403804">этой статье</a>
-                вы можете узнать о том, как в этом приложении ASP.NET настроить вход через внешние службы.
-            </p>
-        </div>
-    }
-    else {
-        using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = Model.ReturnUrl })) {
-            @Html.AntiForgeryToken()
-            <div id="socialLoginList">
-                <p>
-                    @foreach (AuthenticationDescription p in loginProviders) {
-                        <button type="submit" class="btn btn-default" id="@p.AuthenticationType" name="provider" value="@p.AuthenticationType" title="Войти с помощью учетной записи @p.Caption">@p.AuthenticationType</button>
-                    }
-                </p>
-            </div>
+@if (Model.Count == 0)
+{
+    <div class="message-info">
+        <p>Внешние службу проверки подлинности не настроены. См. в <a href="http://go.microsoft.com/fwlink/?LinkId=252166">этой статье</a>
+        сведения о настройке входа через сторонние службы в этом приложении ASP.NET.</p>
+    </div>
+}
+else
+{
+    using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = ViewBag.ReturnUrl }))
+    {
+    @Html.AntiForgeryToken()
+    <fieldset id="socialLoginList">
+        <legend>Вход через другую службу</legend>
+        <p>
+        @foreach (AuthenticationClientData p in Model)
+        {
+            <button type="submit" name="provider" value="@p.AuthenticationClient.ProviderName" title="Войдите, используя свою учетную запись @p.DisplayName">@p.DisplayName</button>
         }
+        </p>
+    </fieldset>
     }
 }
