@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ce2c9f5f2a8a42599aa53b6dded59763" Name="Диаграмма1">
+        <EntityTypeShape EntityType="Database1Model.Route" Width="1.5" PointX="1.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Ticket" Width="1.5" PointX="5.125" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Transport" Width="1.5" PointX="2.5" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.User" Width="1.5" PointX="7.5" PointY="1.625" IsExpanded="true" />
+        <AssociationConnector Association="Database1Model.FK_Ticket_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Transport_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="Database1Model.FK_Ticket_ToTable_1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

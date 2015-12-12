@@ -1,0 +1,60 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<KryzhevKersach.Models.Route>" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+    Details
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Route</legend>
+
+    <div class="display-label">
+        <%: Html.DisplayNameFor(model => model.IdRoute) %>
+    </div>
+    <div class="display-field">
+        <%: Html.DisplayFor(model => model.IdRoute) %>
+    </div>
+
+    <div class="display-label">
+        <%: Html.DisplayNameFor(model => model.firstStop) %>
+    </div>
+    <div class="display-field">
+        <%: Html.DisplayFor(model => model.firstStop) %>
+    </div>
+
+    <div class="display-label">
+        <%: Html.DisplayNameFor(model => model.number) %>
+    </div>
+    <div class="display-field">
+        <%: Html.DisplayFor(model => model.number) %>
+    </div>
+
+    <div class="display-label">
+        <%: Html.DisplayNameFor(model => model.lastStop) %>
+    </div>
+    <div class="display-field">
+        <%: Html.DisplayFor(model => model.lastStop) %>
+    </div>
+
+    <div class="display-label">
+        <%: Html.DisplayNameFor(model => model.count) %>
+    </div>
+    <div class="display-field">
+        <%: Html.DisplayFor(model => model.count) %>
+    </div>
+</fieldset>
+<p>
+    <%: Html.ActionLink("Edit", "Edit", new {  id=Model.IdRoute }) %> |
+    <%: Html.ActionLink("Back to List", "Index") %>
+</p>
+
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="FeaturedContent" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="ScriptsSection" runat="server">
+</asp:Content>

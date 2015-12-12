@@ -1,0 +1,42 @@
+﻿@model IEnumerable<KryzhevKersach.Models.Ticket>
+@using KryzhevKersach.Controllers
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdTicket)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.condition)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idRoute)
+        </th>
+        <th></th>
+    </tr>
+     
+
+    @foreach (var item in Model)
+    {
+        if (item.idUser > WebSecurity.CurrentUserId)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdTicket)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.condition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idRoute)
+            </td>
+            <td>
+                @Html.ActionLink("Просмотреть", "Details", new { id = item.IdTicket }) |
+            </td>
+        </tr>
+        }  
+    }
+
+</table>
+
+@Html.ActionLink("Главная страница", "Home", "Index")

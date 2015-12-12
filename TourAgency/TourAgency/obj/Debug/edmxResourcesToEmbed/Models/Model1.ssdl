@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Database1Model" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="Contract">
+    <Key>
+      <PropertyRef Name="IdContract" />
+    </Key>
+    <Property Name="IdContract" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="condition" Type="nvarchar" MaxLength="50" />
+    <Property Name="idTour" Type="int" Nullable="false" />
+    <Property Name="idUser" Type="int" />
+  </EntityType>
+  <EntityType Name="Statistic">
+    <Key>
+      <PropertyRef Name="IdStatistic" />
+    </Key>
+    <Property Name="IdStatistic" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idTour" Type="int" Nullable="false" />
+    <Property Name="specific" Type="nvarchar" MaxLength="50" />
+    <Property Name="countContract" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tour">
+    <Key>
+      <PropertyRef Name="IdTour" />
+    </Key>
+    <Property Name="IdTour" Type="int" Nullable="false" />
+    <Property Name="nameTour" Type="nvarchar" MaxLength="50" />
+    <Property Name="description" Type="nvarchar" MaxLength="50" />
+    <Property Name="price" Type="int" />
+    <Property Name="startDate" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_Contract_ToTable">
+    <End Role="Tour" Type="Self.Tour" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Contract" Type="Self.Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tour">
+        <PropertyRef Name="IdTour" />
+      </Principal>
+      <Dependent Role="Contract">
+        <PropertyRef Name="idTour" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Statistic_ToTable">
+    <End Role="Tour" Type="Self.Tour" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Statistic" Type="Self.Statistic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tour">
+        <PropertyRef Name="IdTour" />
+      </Principal>
+      <Dependent Role="Statistic">
+        <PropertyRef Name="idTour" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище Database1ModelContainer">
+    <EntitySet Name="Contract" EntityType="Self.Contract" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Statistic" EntityType="Self.Statistic" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tour" EntityType="Self.Tour" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Contract_ToTable" Association="Self.FK_Contract_ToTable">
+      <End Role="Tour" EntitySet="Tour" />
+      <End Role="Contract" EntitySet="Contract" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Statistic_ToTable" Association="Self.FK_Statistic_ToTable">
+      <End Role="Tour" EntitySet="Tour" />
+      <End Role="Statistic" EntitySet="Statistic" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

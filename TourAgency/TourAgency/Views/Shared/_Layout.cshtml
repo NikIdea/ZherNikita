@@ -3,7 +3,7 @@
     <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta charset="utf-8" />
-        <title>@ViewBag.Title — приложение ASP.NET MVC</title>
+        <title>@ViewBag.Title Туристическое агенство</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
@@ -13,7 +13,7 @@
         <header>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("ваша эмблема здесь", "Index", "Home")</p>
+                    <p class="site-title"><img src="../../Images/tour.png" style="height: 175px; width: 400px" /></p>
                 </div>
                 <div class="float-right">
                     <section id="login">
@@ -21,9 +21,10 @@
                     </section>
                     <nav>
                         <ul id="menu">
-                            <li>@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
-                            <li>@Html.ActionLink("О программе", "About", "Home")</li>
-                            <li>@Html.ActionLink("Контакт", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Главная страница", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Статистика по турам", "Index", "Statistic")</li>
+                            <li>@Html.ActionLink("Договора", "Index", "Contract")</li>
+                            <li>@Html.ActionLink("Пользователи", "Index", "User")</li>
                         </ul>
                     </nav>
                 </div>
@@ -38,7 +39,7 @@
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year — приложение ASP.NET MVC</p>
+                    <p>&copy; @DateTime.Now.Year — Туристическое агенство "Самолётик"</p>
                 </div>
             </div>
         </footer>

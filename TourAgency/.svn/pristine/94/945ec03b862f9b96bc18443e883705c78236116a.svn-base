@@ -1,0 +1,144 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using WebMatrix.WebData;
+using System.Web.Mvc;
+using System.Web.Mvc.Ajax;
+using System.Data.Entity;
+using System.Data;
+using System.Data.SqlClient;
+using KryzhevKersach.Models;
+using KryzhevKersach.DAO;
+
+namespace KryzhevKersach.Controllers
+{
+    public class TicketController : Controller
+    {
+        //
+        // GET: /Contact/
+        TicketDAO ticketDAO = new TicketDAO();
+        RouteDAO routeDAO = new RouteDAO();
+
+        [Authorize(Roles = "Administrator, Dispetcher")]
+        public ActionResult Index(int? id)
+        {
+            ViewData["route"] = routeDAO.getAllRoutes();
+            return View(ticketDAO.getAllTickets());
+        }
+
+
+        public ActionResult Details(int id)
+        {
+            return View(ticketDAO.getTicket(id));
+
+        }
+
+
+        protected bool ViewDataSelectList(int idRoute)
+        {
+            var route = routeDAO.getAllRoutes();
+            ViewData["idRoute"] = new SelectList(route, "IdRoute", "number", idRoute);
+            return route.Count() > 0;
+        }
+
+        //[Authorize(Roles = "Client")]
+        /*public ActionResult CreateBron()
+        {
+            if (!ViewDataSelectList(-1))
+                return RedirectToAction("CreateBron");
+            return View("Index", "Home");
+        }*/
+
+        //[AcceptVerbs(HttpVerbs.Post)]
+        //[Authorize(Roles = "Client")]
+        public ActionResult CreateBron(int idRoute)
+        {
+            try
+            {
+                int userID = WebSecurity.CurrentUserId;
+                if (ticketDAO.addBronTicket(idRoute, userID))
+                    return RedirectToAction("UserTickets");
+                else
+                {
+                    return View("Index", "Home");
+                }
+            }
+            catch
+            {
+                return View("Index", "Home");
+            }
+        }
+
+        /*[Authorize(Roles = "Client")]
+        public ActionResult CreateBought()
+        {
+            if (!ViewDataSelectList(-1))
+                return RedirectToAction("UserTickets");
+            return View("Index", "Home");
+        }*/
+
+
+
+        //[AcceptVerbs(HttpVerbs.Post)]
+        //[Authorize(Roles = "Client")]
+        public ActionResult CreateBought(int idRoute)
+        {
+            try
+            {
+                int userID = WebSecurity.CurrentUserId;
+                if (ticketDAO.addBoughtTicket(idRoute, userID))
+                    return RedirectToAction("UserTickets");
+                else
+                {
+                    return View("Index", "Home");
+                }
+            }
+            catch
+            {
+                return View("Index", "Home");
+            }
+        }
+
+        [Authorize(Roles = "Dispetcher")]
+        public ActionResult Edit(int id)
+        {
+            Ticket ticket = ticketDAO.getTicket(id);
+            if (!ViewDataSelectList(Convert.ToInt32(ticket.Route.IdRoute)))
+                return RedirectToAction("Index");
+            return View(ticketDAO.getTicket(id));
+        }
+
+
+        [AcceptVerbs(HttpVerbs.Post)]
+        [Authorize(Roles = "Dispetcher")]
+        public ActionResult Edit(int idRoute, int id, Ticket ticket)
+        {
+
+            if (ticketDAO.editTicket(idRoute, ticket))
+                return RedirectToAction("Index");
+            else
+            {
+                ViewDataSelectList(-1);
+                return View("Edit", ticketDAO.getTicket(id));
+            }
+        }
+
+        [Authorize(Roles = "Dispetcher")]
+        public ActionResult Delete(int id)
+        {
+            return View("Delete", ticketDAO.getTicket(id));
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [Authorize(Roles = "Dispetcher")]
+        public ActionResult Delete(int id, Ticket ticket)
+        {
+
+            if (ticketDAO.deleteTicket(id))
+                return RedirectToAction("Index");
+            else return View("Delete", ticketDAO.getTicket(id));
+
+        }
+    }
+}

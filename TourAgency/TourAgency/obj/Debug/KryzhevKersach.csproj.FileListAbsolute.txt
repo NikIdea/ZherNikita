@@ -1,0 +1,270 @@
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\KryzhevKersach.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\KryzhevKersach.pdb
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\Antlr3.Runtime.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.Core.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\EntityFramework.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\Newtonsoft.Json.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.WebRequest.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Web.Helpers.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Web.Mvc.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Web.Optimization.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Web.Razor.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.Razor.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\WebGrease.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\WebMatrix.Data.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\WebMatrix.WebData.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\EntityFramework.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\Newtonsoft.Json.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.WebRequest.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Web.Helpers.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Web.Mvc.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Web.Razor.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.Razor.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\WebMatrix.Data.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\WebMatrix.WebData.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.Core.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\ru\EntityFramework.resources.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\ru\System.Net.Http.resources.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\ru\System.Net.Http.WebRequest.resources.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Razor.resources.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\ru\WebMatrix.Data.resources.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\ru\Microsoft.Web.WebPages.OAuth.resources.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\bin\ru\WebMatrix.WebData.resources.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\obj\Debug\KryzhevKersach.csprojResolveAssemblyReference.cache
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\obj\Debug\KryzhevKersach.dll
+C:\Users\Maus\Documents\Visual Studio 2012\Projects\KryzhevKersach\KryzhevKersach\obj\Debug\KryzhevKersach.pdb
+I:\KryzhevKersach\KryzhevKersach\bin\KryzhevKersach.dll.config
+I:\KryzhevKersach\KryzhevKersach\bin\KryzhevKersach.dll
+I:\KryzhevKersach\KryzhevKersach\bin\KryzhevKersach.pdb
+I:\KryzhevKersach\KryzhevKersach\bin\Antlr3.Runtime.dll
+I:\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.AspNet.dll
+I:\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.Core.dll
+I:\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OAuth.Consumer.dll
+I:\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OAuth.dll
+I:\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OpenId.dll
+I:\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+I:\KryzhevKersach\KryzhevKersach\bin\EntityFramework.dll
+I:\KryzhevKersach\KryzhevKersach\bin\Microsoft.Web.Infrastructure.dll
+I:\KryzhevKersach\KryzhevKersach\bin\Microsoft.Web.WebPages.OAuth.dll
+I:\KryzhevKersach\KryzhevKersach\bin\Newtonsoft.Json.dll
+I:\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.dll
+I:\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.Formatting.dll
+I:\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.WebRequest.dll
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.Helpers.dll
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.Http.dll
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.Http.WebHost.dll
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.Mvc.dll
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.Optimization.dll
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.Razor.dll
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.Deployment.dll
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.dll
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.Razor.dll
+I:\KryzhevKersach\KryzhevKersach\bin\WebGrease.dll
+I:\KryzhevKersach\KryzhevKersach\bin\WebMatrix.Data.dll
+I:\KryzhevKersach\KryzhevKersach\bin\WebMatrix.WebData.dll
+I:\KryzhevKersach\KryzhevKersach\bin\EntityFramework.xml
+I:\KryzhevKersach\KryzhevKersach\bin\Newtonsoft.Json.xml
+I:\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.xml
+I:\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.Formatting.xml
+I:\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.WebRequest.xml
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.Helpers.xml
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.Http.xml
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.Http.WebHost.xml
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.Mvc.xml
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.Razor.xml
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.xml
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.Deployment.xml
+I:\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.Razor.xml
+I:\KryzhevKersach\KryzhevKersach\bin\WebMatrix.Data.xml
+I:\KryzhevKersach\KryzhevKersach\bin\Microsoft.Web.WebPages.OAuth.xml
+I:\KryzhevKersach\KryzhevKersach\bin\WebMatrix.WebData.xml
+I:\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.AspNet.xml
+I:\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.Core.xml
+I:\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OAuth.Consumer.xml
+I:\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OAuth.xml
+I:\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OpenId.xml
+I:\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+I:\KryzhevKersach\KryzhevKersach\bin\ru\EntityFramework.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\System.Net.Http.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\System.Net.Http.Formatting.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\System.Net.Http.WebRequest.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Helpers.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Http.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Http.WebHost.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Mvc.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Optimization.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Razor.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.WebPages.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.WebPages.Deployment.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.WebPages.Razor.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\WebMatrix.Data.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\Microsoft.Web.WebPages.OAuth.resources.dll
+I:\KryzhevKersach\KryzhevKersach\bin\ru\WebMatrix.WebData.resources.dll
+I:\KryzhevKersach\KryzhevKersach\obj\Debug\KryzhevKersach.csprojResolveAssemblyReference.cache
+I:\KryzhevKersach\KryzhevKersach\obj\Debug\KryzhevKersach.dll
+I:\KryzhevKersach\KryzhevKersach\obj\Debug\KryzhevKersach.pdb
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\KryzhevKersach.dll.config
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\KryzhevKersach.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\KryzhevKersach.pdb
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\Antlr3.Runtime.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.AspNet.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.Core.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OAuth.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OpenId.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\EntityFramework.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\Microsoft.Web.Infrastructure.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\Newtonsoft.Json.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.Formatting.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.WebRequest.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.Helpers.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.Http.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.Http.WebHost.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.Mvc.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.Optimization.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.Razor.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.Deployment.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.Razor.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\WebGrease.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\WebMatrix.Data.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\WebMatrix.WebData.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\EntityFramework.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\Newtonsoft.Json.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.Formatting.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Net.Http.WebRequest.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.Helpers.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.Http.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.Http.WebHost.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.Mvc.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.Razor.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.Deployment.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\System.Web.WebPages.Razor.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\WebMatrix.Data.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\WebMatrix.WebData.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.AspNet.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.Core.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OAuth.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OpenId.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\EntityFramework.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\System.Net.Http.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\System.Net.Http.Formatting.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\System.Net.Http.WebRequest.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Helpers.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Http.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Http.WebHost.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Mvc.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Optimization.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.Razor.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.WebPages.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.WebPages.Deployment.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\System.Web.WebPages.Razor.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\WebMatrix.Data.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\Microsoft.Web.WebPages.OAuth.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\bin\ru\WebMatrix.WebData.resources.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\obj\Debug\KryzhevKersach.csprojResolveAssemblyReference.cache
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\obj\Debug\KryzhevKersach.dll
+D:\Учеба\5 семестр\Тех. прог. Вершинин\Курсачи\KryzhevKersach\KryzhevKersach\obj\Debug\KryzhevKersach.pdb
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\KryzhevKersach.dll.config
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\KryzhevKersach.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\KryzhevKersach.pdb
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\Antlr3.Runtime.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\DotNetOpenAuth.Core.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\EntityFramework.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\Newtonsoft.Json.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Net.Http.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Net.Http.Formatting.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Net.Http.WebRequest.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.Helpers.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.Http.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.Http.WebHost.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.Mvc.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.Optimization.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.Razor.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.WebPages.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.WebPages.Razor.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\WebGrease.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\WebMatrix.Data.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\WebMatrix.WebData.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\EntityFramework.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\Newtonsoft.Json.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Net.Http.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Net.Http.Formatting.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Net.Http.WebRequest.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.Helpers.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.Http.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.Http.WebHost.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.Mvc.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.Razor.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.WebPages.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\System.Web.WebPages.Razor.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\WebMatrix.Data.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\WebMatrix.WebData.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\DotNetOpenAuth.Core.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\EntityFramework.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\System.Net.Http.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\System.Net.Http.Formatting.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\System.Net.Http.WebRequest.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\System.Web.Http.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\System.Web.Http.WebHost.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\System.Web.Razor.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\WebMatrix.Data.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\Microsoft.Web.WebPages.OAuth.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\bin\ru\WebMatrix.WebData.resources.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\obj\Debug\KryzhevKersach.csprojResolveAssemblyReference.cache
+C:\Users\Никита\Desktop\TourAgency\TourAgency\obj\Debug\KryzhevKersach.dll
+C:\Users\Никита\Desktop\TourAgency\TourAgency\obj\Debug\KryzhevKersach.pdb

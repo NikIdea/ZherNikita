@@ -1,0 +1,55 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<KryzhevKersach.Models.Ticket>>" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+    Index
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+<h2>Index</h2>
+
+<p>
+    <%: Html.ActionLink("Create New", "Create") %>
+</p>
+<table>
+    <tr>
+        <th>
+            <%: Html.DisplayNameFor(model => model.IdTicket) %>
+        </th>
+        <th>
+            <%: Html.DisplayNameFor(model => model.condition) %>
+        </th>
+        <th>
+            <%: Html.DisplayNameFor(model => model.idRoute) %>
+        </th>
+        <th></th>
+    </tr>
+
+<% foreach (var item in Model) { %>
+    <tr>
+        <td>
+            <%: Html.DisplayFor(modelItem => item.IdTicket) %>
+        </td>
+        <td>
+            <%: Html.DisplayFor(modelItem => item.condition) %>
+        </td>
+        <td>
+            <%: Html.DisplayFor(modelItem => item.idRoute) %>
+        </td>
+        <td>
+            <%: Html.ActionLink("Edit", "Edit", new {  id=item.IdTicket }) %> |
+            <%: Html.ActionLink("Details", "Details", new {  id=item.IdTicket }) %> |
+            <%: Html.ActionLink("Delete", "Delete", new {  id=item.IdTicket }) %>
+        </td>
+    </tr>
+<% } %>
+
+</table>
+
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="FeaturedContent" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="ScriptsSection" runat="server">
+</asp:Content>

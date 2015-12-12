@@ -1,0 +1,46 @@
+﻿@model IEnumerable<TourAgency.Models.Statistic>
+
+<p>
+    @Html.ActionLink("Добавить статистику", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdStatistic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idTour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.specific)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.countContract)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdStatistic)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idTour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.specific)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.countContract)
+            </td>
+            <td>
+                @Html.ActionLink("Изменить", "Edit", new { id = item.IdStatistic }) |
+            @Html.ActionLink("Посмотреть", "Details", new { id = item.IdStatistic }) |
+            @Html.ActionLink("Удалить", "Delete", new { id = item.IdStatistic })
+            </td>
+        </tr>
+    }
+
+</table>

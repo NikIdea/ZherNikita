@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="Contract">
+    <Key>
+      <PropertyRef Name="IdContract" />
+    </Key>
+    <Property Name="IdContract" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="condition" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="idTour" Type="Int32" Nullable="false" />
+    <Property Name="idUser" Type="Int32" />
+    <NavigationProperty Name="Tour" Relationship="Self.FK_Contract_ToTable" FromRole="Contract" ToRole="Tour" />
+  </EntityType>
+  <EntityType Name="Statistic">
+    <Key>
+      <PropertyRef Name="IdStatistic" />
+    </Key>
+    <Property Name="IdStatistic" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idTour" Type="Int32" Nullable="false" />
+    <Property Name="specific" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="countContract" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tour" Relationship="Self.FK_Statistic_ToTable" FromRole="Statistic" ToRole="Tour" />
+  </EntityType>
+  <EntityType Name="Tour">
+    <Key>
+      <PropertyRef Name="IdTour" />
+    </Key>
+    <Property Name="IdTour" Type="Int32" Nullable="false" />
+    <Property Name="nameTour" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Int32" />
+    <Property Name="startDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Contracts" Relationship="Self.FK_Contract_ToTable" FromRole="Tour" ToRole="Contract" />
+    <NavigationProperty Name="Statistics" Relationship="Self.FK_Statistic_ToTable" FromRole="Tour" ToRole="Statistic" />
+  </EntityType>
+  <Association Name="FK_Contract_ToTable">
+    <End Role="Tour" Type="Self.Tour" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Contract" Type="Self.Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tour">
+        <PropertyRef Name="IdTour" />
+      </Principal>
+      <Dependent Role="Contract">
+        <PropertyRef Name="idTour" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Statistic_ToTable">
+    <End Role="Tour" Type="Self.Tour" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Statistic" Type="Self.Statistic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tour">
+        <PropertyRef Name="IdTour" />
+      </Principal>
+      <Dependent Role="Statistic">
+        <PropertyRef Name="idTour" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Database1Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Contracts" EntityType="Self.Contract" />
+    <EntitySet Name="Statistics" EntityType="Self.Statistic" />
+    <EntitySet Name="Tours" EntityType="Self.Tour" />
+    <AssociationSet Name="FK_Contract_ToTable" Association="Self.FK_Contract_ToTable">
+      <End Role="Tour" EntitySet="Tours" />
+      <End Role="Contract" EntitySet="Contracts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Statistic_ToTable" Association="Self.FK_Statistic_ToTable">
+      <End Role="Tour" EntitySet="Tours" />
+      <End Role="Statistic" EntitySet="Statistics" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

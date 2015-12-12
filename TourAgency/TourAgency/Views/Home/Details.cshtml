@@ -1,0 +1,56 @@
+﻿@model TourAgency.Models.Tour
+@using TourAgency.Models
+@using TourAgency.Controllers
+
+<fieldset>
+    <legend>Tour</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IdTour)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IdTour)
+    </div>
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.nameTour)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.nameTour)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.price)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.price)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.startDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.startDate)
+    </div>
+    
+    <h1> Туристическое агенство "Самолётик" </h1>
+
+    <ul> 
+        @foreach (Statistic c in Model.Statistics)
+        {
+            <li> @c.countContract @Html.ActionLink("Просмотреть", "Details", "Statistic", new {  id=c.IdStatistic }, null)
+                @Html.ActionLink("Изменить", "Edit", "Statistic", new {  id=c.IdStatistic }, null)
+            </li>
+        }
+    </ul>
+</fieldset>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new {  id=Model.IdTour }) |
+    @Html.ActionLink("Обратно к списку", "Index")
+</p>

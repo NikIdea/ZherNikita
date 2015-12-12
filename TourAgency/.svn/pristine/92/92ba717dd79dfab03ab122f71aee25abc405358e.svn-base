@@ -1,0 +1,91 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using System.Web.Mvc.Ajax;
+using System.Data.EntityModel;
+using System.Data;
+using System.Data.Objects;
+using System.Data.SqlClient;
+using KryzhevKersach.Models;
+using KryzhevKersach.DAO;
+
+namespace KryzhevKersach.DAO
+{
+    public class TransportDAO
+    {
+        private Database1Entities2 _entities = new Database1Entities2();
+
+        public IEnumerable<Transport> getAllTransports() 
+        {
+            return (from c in _entities.Transports select c);
+        }
+
+        public Route GetTransportRoute(int? id) 
+        {
+            if (id != null)
+                return (from c in _entities.Routes where c.IdRoute == id select c).FirstOrDefault();
+            else
+                return (from c in _entities.Routes select c).FirstOrDefault();
+        }
+
+        public Transport getTransport(int id) 
+        {
+            return (from c in _entities.Transports.Include("Routes") where c.IdTransport == id select c).FirstOrDefault();
+        }
+
+        public IEnumerable<Transport> getTransportByRoute(int id)  
+        {
+            return (from c in _entities.Transports.Include("Routes") where c.idRoute == id select c);
+        }
+
+        public bool addTransport(int RouteID, Transport transport) 
+        {
+            try
+            {
+                transport.Route = GetTransportRoute(RouteID);
+                _entities.Transports.Add(transport); 
+                _entities.SaveChanges(); 
+            }
+            catch
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public bool editTransport(int TransportID, Transport transport)
+        {
+            Transport originalTransport = getTransport(Convert.ToInt32(transport.IdTransport));
+            originalTransport.Route = GetTransportRoute(TransportID);  
+            try
+            {
+                _entities.Transports.Attach(originalTransport);
+                _entities.Entry(originalTransport).State = EntityState.Modified; 
+                _entities.SaveChanges(); 
+            }
+            catch
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public bool deleteTransport(Transport transport) 
+        {
+            Transport originalTransport = getTransport(Convert.ToInt32(transport.IdTransport)); 
+
+            try
+            {
+                _entities.Transports.Remove(originalTransport); 
+                _entities.SaveChanges(); 
+            }
+            catch
+            {
+                return false;
+            }
+            return true;
+        }
+    }
+}

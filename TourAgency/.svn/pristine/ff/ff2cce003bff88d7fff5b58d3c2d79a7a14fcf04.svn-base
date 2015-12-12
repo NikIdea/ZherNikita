@@ -1,0 +1,91 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using System.Web.Mvc.Ajax;
+using System.Data.EntityModel;
+using System.Data;
+using System.Data.Objects;
+using System.Data.SqlClient;
+using KryzhevKersach.Models;
+using KryzhevKersach.DAO;
+
+namespace KryzhevKersach.DAO
+{
+    public class TicketDAO
+    {
+        private Database1Entities2 _entities = new Database1Entities2();
+
+        public IEnumerable<Ticket> getAllTickets() 
+        {
+            return (from c in _entities.Tickets select c);
+        }
+
+        public Route GetTicketRoute(int? id) 
+        {
+            if (id != null)
+                return (from c in _entities.Routes where c.IdRoute == id select c).FirstOrDefault();
+            else
+                return (from c in _entities.Routes select c).FirstOrDefault();
+        }
+
+        public Ticket getTicket(int id) 
+        {
+            return (from c in _entities.Tickets.Include("Routes") where c.IdTicket == id select c).FirstOrDefault();
+        }
+
+        public IEnumerable<Ticket> getTicketByRoute(int id)  
+        {
+            return (from c in _entities.Tickets.Include("Routes") where c.idRoute == id select c);
+        }
+
+        public bool addTicket(int RouteID, Ticket ticket) 
+        {
+            try
+            {
+                ticket.Route = GetTicketRoute(RouteID);
+                _entities.Tickets.Add(ticket); 
+                _entities.SaveChanges(); 
+            }
+            catch
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public bool editTicket(int TicketID, Ticket ticket)
+        {
+            Ticket originalTicket = getTicket(Convert.ToInt32(ticket.IdTicket));
+            originalTicket.Route = GetTicketRoute(TicketID);  
+            try
+            {
+                _entities.Tickets.Attach(originalTicket);
+                _entities.Entry(originalTicket).State = EntityState.Modified; 
+                _entities.SaveChanges(); 
+            }
+            catch
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public bool deleteTicket(Ticket ticket) 
+        {
+            Ticket originalTicket = getTicket(Convert.ToInt32(ticket.IdTicket)); 
+
+            try
+            {
+                _entities.Tickets.Remove(originalTicket); 
+                _entities.SaveChanges(); 
+            }
+            catch
+            {
+                return false;
+            }
+            return true;
+        }
+    }
+}

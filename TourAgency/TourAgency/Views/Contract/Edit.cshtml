@@ -1,0 +1,66 @@
+﻿@model TourAgency.Models.Contract
+
+<script src="~/Scripts/jquery-1.7.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Contract</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IdContract)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IdContract)
+            @Html.ValidationMessageFor(model => model.IdContract)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.condition)
+        </div>
+        <div class="editor-field">
+            @if (Roles.GetRolesForUser().Contains("Manager")){
+             @Html.DropDownListFor(model => model.condition, new List<SelectListItem>
+               {
+                        new SelectListItem() {Text = "Забронирован", Value="Забронирован"},
+                        new SelectListItem() {Text = "Одобрен", Value="Одобрен"},
+                        new SelectListItem() {Text = "Отклонен", Value="Отклонен"}
+               })
+            }
+            else 
+            {
+                @Html.DropDownListFor(model => model.condition, new List<SelectListItem>
+               {
+                        new SelectListItem() {Text = "Куплен", Value="Куплен"}
+               })
+            }
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.idTour)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.idTour)
+            @Html.ValidationMessageFor(model => model.idTour)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.idUser)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.idUser)
+            @Html.ValidationMessageFor(model => model.idUser)
+        </div>
+
+        <p>
+            <input type="submit" value="Сохранить" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Обратно к списку", "Index")
+</div>

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<TourAgency.Models.Contract>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.condition)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idTour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idUser)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        if ((item.idUser == WebSecurity.CurrentUserId) && (Roles.GetRolesForUser().Contains("Client")))
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.condition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idTour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idUser)
+            </td>
+            <td>
+                @Html.ActionLink("Удалить", "Delete", new { id = item.IdContract })
+                @if (item.condition == "Одобрен")
+                {
+                    @Html.ActionLink("Купить билет", "Edit", new { id = item.IdContract })
+                }
+            </td>
+        </tr>
+        }
+        if (Roles.GetRolesForUser().Contains("Manager") || (Roles.GetRolesForUser().Contains("Administrator")))
+        {
+            <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.condition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idTour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idUser)
+            </td>
+            <td>
+                @if (Roles.GetRolesForUser().Contains("Manager"))
+                {
+                    @Html.ActionLink("Изменить", "Edit", new { id = item.IdContract })
+                }
+            </td>
+        </tr>
+        }
+        
+    }
+
+
+</table>

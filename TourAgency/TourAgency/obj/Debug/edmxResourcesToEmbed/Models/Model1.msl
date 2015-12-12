@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Database1ModelContainer" CdmEntityContainer="Database1Entities1">
+    <EntitySetMapping Name="Contracts">
+      <EntityTypeMapping TypeName="Database1Model.Contract">
+        <MappingFragment StoreEntitySet="Contract">
+          <ScalarProperty Name="IdContract" ColumnName="IdContract" />
+          <ScalarProperty Name="condition" ColumnName="condition" />
+          <ScalarProperty Name="idTour" ColumnName="idTour" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Statistics">
+      <EntityTypeMapping TypeName="Database1Model.Statistic">
+        <MappingFragment StoreEntitySet="Statistic">
+          <ScalarProperty Name="IdStatistic" ColumnName="IdStatistic" />
+          <ScalarProperty Name="idTour" ColumnName="idTour" />
+          <ScalarProperty Name="specific" ColumnName="specific" />
+          <ScalarProperty Name="countContract" ColumnName="countContract" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tours">
+      <EntityTypeMapping TypeName="Database1Model.Tour">
+        <MappingFragment StoreEntitySet="Tour">
+          <ScalarProperty Name="IdTour" ColumnName="IdTour" />
+          <ScalarProperty Name="nameTour" ColumnName="nameTour" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

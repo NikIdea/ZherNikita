@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="Database1Entities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Routes" EntityType="Database1Model.Route" />
+    <EntitySet Name="Tickets" EntityType="Database1Model.Ticket" />
+    <EntitySet Name="Transports" EntityType="Database1Model.Transport" />
+    <EntitySet Name="Users" EntityType="Database1Model.User" />
+    <AssociationSet Name="FK_Ticket_ToTable" Association="Database1Model.FK_Ticket_ToTable">
+      <End Role="Route" EntitySet="Routes" />
+      <End Role="Ticket" EntitySet="Tickets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transport_ToTable" Association="Database1Model.FK_Transport_ToTable">
+      <End Role="Route" EntitySet="Routes" />
+      <End Role="Transport" EntitySet="Transports" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ticket_ToTable_1" Association="Database1Model.FK_Ticket_ToTable_1">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Ticket" EntitySet="Tickets" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Route">
+    <Key>
+      <PropertyRef Name="IdRoute" />
+    </Key>
+    <Property Name="IdRoute" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="firstStop" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="number" Type="Int32" Nullable="false" />
+    <Property Name="lastStop" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="count" Type="Int32" />
+    <NavigationProperty Name="Tickets" Relationship="Database1Model.FK_Ticket_ToTable" FromRole="Route" ToRole="Ticket" />
+    <NavigationProperty Name="Transports" Relationship="Database1Model.FK_Transport_ToTable" FromRole="Route" ToRole="Transport" />
+  </EntityType>
+  <EntityType Name="Ticket">
+    <Key>
+      <PropertyRef Name="IdTicket" />
+    </Key>
+    <Property Name="IdTicket" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="condition" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="idRoute" Type="Int32" Nullable="false" />
+    <Property Name="idUser" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Route" Relationship="Database1Model.FK_Ticket_ToTable" FromRole="Ticket" ToRole="Route" />
+    <NavigationProperty Name="User" Relationship="Database1Model.FK_Ticket_ToTable_1" FromRole="Ticket" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Transport">
+    <Key>
+      <PropertyRef Name="IdTransport" />
+    </Key>
+    <Property Name="IdTransport" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idRoute" Type="Int32" Nullable="false" />
+    <Property Name="driver" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="serialNumber" Type="Int32" />
+    <NavigationProperty Name="Route" Relationship="Database1Model.FK_Transport_ToTable" FromRole="Transport" ToRole="Route" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="IdUser" />
+    </Key>
+    <Property Name="IdUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="login" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="fio" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="role" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Tickets" Relationship="Database1Model.FK_Ticket_ToTable_1" FromRole="User" ToRole="Ticket" />
+  </EntityType>
+  <Association Name="FK_Ticket_ToTable">
+    <End Role="Route" Type="Database1Model.Route" Multiplicity="1" />
+    <End Role="Ticket" Type="Database1Model.Ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Route">
+        <PropertyRef Name="IdRoute" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="idRoute" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transport_ToTable">
+    <End Role="Route" Type="Database1Model.Route" Multiplicity="1" />
+    <End Role="Transport" Type="Database1Model.Transport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Route">
+        <PropertyRef Name="IdRoute" />
+      </Principal>
+      <Dependent Role="Transport">
+        <PropertyRef Name="idRoute" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ticket_ToTable_1">
+    <End Role="User" Type="Database1Model.User" Multiplicity="1" />
+    <End Role="Ticket" Type="Database1Model.Ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="IdUser" />
+      </Principal>
+      <Dependent Role="Ticket">
+        <PropertyRef Name="idUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
