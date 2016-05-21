@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Список мест</title>
+          <style>
+             body {
+    background: url("http://bello-tur.umi.ru/images/cms/thumbs/c513ea8a5f517f47a5fffa527c6db8cfc8ee3f33/main_img_placeholder_960_auto.png") no-repeat;
+    background-position: center;   
+    background-color: greenyellow; 
+   }
+   </style>
+    </h:head>
+    <h:body>
+        <h1>Места</h1>
+        <f:view>
+            <h:form>
+                <p:dataTable value="#{placeView.allPlaces}" var="place">
+            <p:column>
+                <f:facet name="header">Город</f:facet>
+                #{place.city}
+            </p:column>
+            <p:column>
+                <f:facet name="header">Страна</f:facet>
+                #{place.country}
+            </p:column>
+            <p:column>
+                <f:facet name="header">Отель</f:facet>
+                #{place.hotel}
+            </p:column> 
+             <p:column>
+                <f:facet name="header">Звезды</f:facet>
+                #{place.hotelStars}
+            </p:column> 
+             <p:column>                  
+                 <h:commandButton value="ShowTours" action="#{placeView.goToPlaceTours(place.id)}"/>
+             </p:column>
+                    <p:column>
+                        <p:commandButton value="Удалить" action="#{placeView.delete(place.id)}"/>
+                    </p:column>
+
+        </p:dataTable>
+         <h:outputLink value="addPlace.xhtml">Добавить место</h:outputLink>
+        <br></br><h:commandButton action="#{contractView.gohome()}" value="Home"/>
+            </h:form>
+        </f:view>
+    </h:body>
+</html>
+
+
+

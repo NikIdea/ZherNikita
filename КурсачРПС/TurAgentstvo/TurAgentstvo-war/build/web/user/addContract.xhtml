@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Add contract</title>
+          <style>
+             body {
+    background: url("http://bello-tur.umi.ru/images/cms/thumbs/c513ea8a5f517f47a5fffa527c6db8cfc8ee3f33/main_img_placeholder_960_auto.png") no-repeat;
+    background-position: center;   
+    background-color: greenyellow; 
+   }
+   </style>
+    </h:head>
+    <h:body>
+        <h:form>
+            Пользователь
+            <p:selectOneMenu value="#{contractView.contract.user}" converter="#{userConverter}">
+                <f:selectItems value="#{userView.allUsers}" var="user" 
+                               itemValue="#{user}" itemLabel="#{user.name}" /> 
+             </p:selectOneMenu><br></br>
+             Тур<p:selectOneMenu value="#{contractView.contract.tour}" converter="#{tourConverter}">
+                 <f:selectItems value="#{tourView.allTours}" var="tour" 
+                                itemValue="#{tour}" itemLabel="#{tour.nameTour}" /> 
+             </p:selectOneMenu><br></br>
+             <p:selectOneMenu value="#{contractView.contract.status}">
+                  <f:selectItem itemValue="unchecked" itemLabel="Ваш контракт будет на проверке" />
+             </p:selectOneMenu><br></br>
+             <p:commandButton action="#{contractView.addContract}" value="add"/>
+            <br></br><p:commandButton action="#{cotractView.home()}" value="home"/>
+             </h:form>  
+    </h:body>
+</html>
+

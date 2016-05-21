@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Add tour</title>
+          <style>
+             body {
+    background: url("http://bello-tur.umi.ru/images/cms/thumbs/c513ea8a5f517f47a5fffa527c6db8cfc8ee3f33/main_img_placeholder_960_auto.png") no-repeat;
+    background-position: center;   
+    background-color: greenyellow; 
+   }
+   </style>
+    </h:head>
+    <h:body>
+        <h:form>
+           
+        Имя тура<p:inputText value="#{tourView.tour.nameTour}" required="true" requiredMessage="Please enter name" /><br></br> 
+             Выбирите место<p:selectOneMenu value="#{tourView.tour.place}" converter="#{placeConverter}">
+                <f:selectItems value="#{placeView.allPlaces}" var="place" 
+                               itemValue="#{place}" itemLabel="#{place.city}" /> 
+             </p:selectOneMenu><br></br>
+            Цена<p:inputText value="#{tourView.tour.price}" required="true" requiredMessage="Please enter price" /><br></br> 
+            Кол-во человек<p:inputText value="#{tourView.tour.quantity}" required="true" requiredMessage="Please enter price"/><br></br> 
+            Дата отправления<p:calendar value="#{tourView.tour.startDate}"/>
+            Дата отъезда<p:calendar value="#{tourView.tour.endDate}"/>
+        <h:commandButton action="#{tourView.addTour()}" value="add"/>
+            <br></br><h:commandButton action="#{cotractView.home()}" value="home"/>
+             </h:form>  
+    </h:body>
+</html>
+

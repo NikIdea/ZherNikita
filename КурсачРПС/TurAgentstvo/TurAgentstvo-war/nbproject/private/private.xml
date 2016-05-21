@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/entity/Report.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/converter/PlaceConverter.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/dao/TourFacade.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/web/reports/reports.xhtml</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/view/TourView.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/web/index.xhtml</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/dao/ContractFacadeLocal.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/dao/AbstractFacade.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/conf/persistence.xml</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/web/reports/addReport.xhtml</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/entity/Tour.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/dao/PlaceFacade.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/dao/ContractFacade.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/web/admin/users.xhtml</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/converter/TourConverter.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/web/admin/addUser.xhtml</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/dao/PlaceFacadeLocal.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/view/ReportView.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/dao/TourFacadeLocal.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/dao/ReportFacade.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/view/ContractView.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/view/PlaceView.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/entity/UserA.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/web/user/requests.xhtml</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/src/java/dao/UserAFacade.java</file>
+            <file>file:/C:/Users/Никита/Desktop/TurAgentstvo/TurAgentstvo-war/web/user/contracts.xhtml</file>
+        </group>
+    </open-files>
+</project-private>

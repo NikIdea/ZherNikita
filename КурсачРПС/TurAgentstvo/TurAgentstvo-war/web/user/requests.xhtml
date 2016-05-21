@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Список контрактов</title>
+          <style>
+             body {
+    background: url("http://bello-tur.umi.ru/images/cms/thumbs/c513ea8a5f517f47a5fffa527c6db8cfc8ee3f33/main_img_placeholder_960_auto.png") no-repeat;
+    background-position: center;   
+    background-color: greenyellow; 
+   }
+   </style>
+    </h:head>
+    <h:body>
+        <h1>Контракты</h1>
+        <f:view>
+            <h:form>
+                <p:dataTable value="#{contractView.uncheckedContracts}" var="contract">
+            <p:column>
+                <f:facet name="header">Контракт</f:facet>
+                #{contract.tour.nameTour}
+            </p:column>
+            <p:column>
+                <f:facet name="header">Страна</f:facet>
+                #{contract.user.name}
+            </p:column>
+                    <p:column>
+                        <h:commandButton action="#{contractView.check(contract.id)}" value="Check"/>
+                    </p:column>
+                      <p:column>
+                          <h:commandButton action="#{contractView.deleteContract(contract.id)}" value="Delete"/>
+                    </p:column>
+
+        </p:dataTable>
+       
+        <br></br><h:commandButton action="#{contractView.gohome()}" value="Home"/>
+            </h:form>
+        </f:view>
+    </h:body>
+</html>

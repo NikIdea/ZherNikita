@@ -1,0 +1,29 @@
+.first{
+    float: right;
+}
+
+.wrapper{
+    margin-top: 30%;
+}
+
+.first{
+    width: 100%;
+    float: left;
+    background-color: #fcc23d;
+    text-align: center;
+}
+
+.second{
+    width: 100%;
+    float: left;
+    background-color: #ef233d;
+    text-align: center;
+}
+
+.third{
+    width: 100%;
+    float: left;
+    background-color: #ba5234;
+    text-align: center;
+}
+
